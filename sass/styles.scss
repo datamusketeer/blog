@@ -1,0 +1,53 @@
+@mixin tablet-up {
+    @media only screen and (min-width: 760px) {
+        @content;
+    }
+}
+
+@mixin desktop-up {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+* {
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.site {
+    padding: 0.75rem;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-areas:
+        "site-navigation"
+        "sidebar"
+        "content"
+    ;
+
+    @include tablet-up {
+        padding: 1.5rem;
+        grid-template-columns: 306px 1fr 1fr;
+        column-gap: 2rem;
+        grid-template-areas:
+            "site-navigation site-navigation site-navigation"
+            "sidebar content content"
+        ;
+    }
+}
+
+.site-navigation {
+    grid-area: site-navigation;
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+    &>section:first-child>h1 {
+        margin-top: 0;
+    }
+}
+
+.content {
+    grid-area: content;
+}
