@@ -3,15 +3,15 @@
 {% block body %}
 
 <div class="site">
-    <header class="site-navigation">
-        <nav>
-            <code>cd</code>
-            <a href="/">/home</a>
-        </nav>
-    </header>
     <aside class="sidebar">
+        <section class="site-navigation">
+            <h1 class="cli-heading"><code>> ls</code></h1>
+            <nav>
+                <a href="/">/home</a>
+            </nav>
+        </section>
         <section class="introduction">
-            <h1><code>> whoami</code></h1>
+            <h1 class="cli-heading"><code>> whoami</code></h1>
             <p>
                 I'm Wojciech at day and @datamusketeer at night.
                 As you can see from the heading, I might like computers.
@@ -19,18 +19,18 @@
             </p>
         </section>
         <section class="motivation">
-            <h1><code>> whatis this</code></h1>
+            <h1 class="cli-heading"><code>> whatis this</code></h1>
             <p>
                 I'm thrilled to get you on my website.
                 It was created to allow me to express myself, share my knowledge and help others.
             </p>
         </section>
         <section class="contacts">
-            <h1><code>> ls --all contacts</code></h1>
+            <h1 class="cli-heading"><code>> cat -A contacts</code></h1>
             <nav class="social-links">
                 <a title="email me" rel="me" href="mailto:wojciech.kopacki@datamusketeers.com">
                     <svg aria-hidden="true" width="48px" height="48px" viewBox="-2.4 -2.4 28.80 28.80"
-                        xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor"
                         stroke-width="0.00024000000000000003" transform="matrix(1, 0, 0, 1, 0, 0)">
 
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -45,9 +45,9 @@
             </nav>
         </section>
         <section class="fun">
-            <h1><code>> echo "Hello?"</code></h1>
+            <h1 class="cli-heading"><code>> echo "Hello?"</code></h1>
             <code>Hello?</code>
-            <h1><code>^C</code></h1>
+            <h1 class="cli-sigint"><code>^C</code></h1>
         </section>
     </aside>
     <main class="content">
