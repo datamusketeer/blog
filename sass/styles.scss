@@ -56,6 +56,16 @@
     cursor: pointer;
 }
 
+.social-links>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 // fonts
 
 * {
@@ -70,6 +80,8 @@ body {
 
     a {
         color: var(--link);
+        text-decoration: none;
+
     }
 
     .cli-heading {
