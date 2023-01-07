@@ -1,13 +1,31 @@
 {% extends "_site_wrapper.html" %}
 
 {% block main_content %}
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
-eum fugiat quo voluptas nulla pariatur?
+<section class="good-parts">
+    <h1>What will you find here?</h1>
+    <p>
+        Currently, the page is still under development.
+        I don't treat it exclusively as a platform for writing on work-related
+        (<em>data</em>!) topics, nor as a personal diary - it is best to mix that.
+        So, stay tuned and keep exploring!
+    </p>
+</section>
+<section class="bad-parts">
+    <h1>What won't you find here?</h1>
+    <ul class="no-no">
+        <li>Cookies? - No, thank you. I'm on a diet.</li>
+        <li>Analytics? - I don't need to know anything about you.
+            If you'd like to introduce yourself, go and write to me!
+        </li>
+        <li>A ton of JavaScript? - No, I try my best to follow
+            <a href="https://www.w3.org/wiki/The_principles_of_unobtrusive_JavaScript">
+                the unobtrusive JavaScript pattern</a>.
+            The list of unsupported items will appear below if you do not have JavaScript enabled.
+        </li>
+    </ul>
+    <noscript>
+        Hi! Your JavaScript is disabled, but all the functionalities are supported! 🎉
+    </noscript>
+</section>
 
 {% endblock content %}
